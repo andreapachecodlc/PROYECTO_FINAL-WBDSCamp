@@ -1,7 +1,12 @@
-# ProyectoFinal-WBDSCamp
-**A. Instalación:**
+Proyecto final presentado para el WBDS LA Camp
 
-Las bibliotecas necesarias para que el código funcione adecuadamente son:
+## Identificación de secuencias codificantes relacionadas a la producción de biosurfactantes en *Bacillus paralicheniformis* CPL618
+
+Los objetivos, resultados y conclusiones del proyecto se encuentran explicados en el archivo `notebook_proyecto-final .ipynb`
+
+### Instalación:
+
+Bibliotecas necesarias:
 
 - pandas 
 - pyCirclize 
@@ -11,8 +16,8 @@ Las bibliotecas necesarias para que el código funcione adecuadamente son:
 - subprocess 
 - BioPython 
 - io 
-- Adicionalmente se debe tener instalado el sowftware de NCBI Blast+ en la máquina local
-- El archivo **credentials.py** debe tener la clave para la API de NCBI que da esta plataforma a cada usuario registrado, también debe tener el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
+- Adicionalmente se debe tener instalado el software de **NCBI Blast+** en la máquina local
+- Se debe crear previamente el archivo **credentials.py** con la clave para la API de NCBI que da esta plataforma a cada usuario registrado y el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
 
  **El archivo credentials.py debe tener el siguiente formato:**
 ```
@@ -25,7 +30,15 @@ Para instalar las bibliotecas mencionadas se puede hacer uso del comando pip3:
 
 `pip3 install *nombre de biblioteca que se requiere*`
 
-**B. Corrida:**
+### Corrida:
+
+- Se puede ejecutar el archivo `codigo_ProyectoFinal.py` mediante la terminal (ubicándonos en la carpeta en la que se encuentra el archivo):
+
+`python3 codigo_ProyectoFinal.py`
+
+- También se puede correr cada celda de código del archivo `notebook_proyecto-final .ipynb` en Jupyter o Google Colab.
+
+Ambas opciones dan los siguientes archivos de salida como resultado:
 
 1. Al correr el código que emplea la biblioteca **pyrodigal** otendremos 2 archivos:
 
@@ -74,4 +87,4 @@ Luego de hacer los 2 análisis BLAST complementarios se obtendrán 8 archivos:
 8. Finalmente a lo largo del código se irá imprimiendo información reelevante respecto a nuestro análisis: 
 **El número de genes candidatos resultantes de BLAST, la cantidad de genes candidatos en operón seleccionado y los dominios funcionales más frecuentes en las secuencias seleccionadas**
 
-Todos los archivos de salida generados mencionados se ubicarán en la carpeta que contiene el código corrido (.py o .ipynb).
+Todos los archivos de salida generados mencionados se ubicarán en la carpeta que contiene el archivo con el código ejecutado (.py o .ipynb).
