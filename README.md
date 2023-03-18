@@ -14,14 +14,9 @@ Las bibliotecas necesarias para que el código funcione adecuadamente son:
 - io 
 - Adicionalmente se debe tener instalado el sowftware de NCBI Blast+ en la máquina local
 
-Para instalar las bibliotecas mencionadas, puedes ejecutar los siguientes comandos
-pip3 install matplotlib
-pip3 install pandas
-pip3 install pycirclize
-pip3 install pyrodigal
-pip3 install requests
-pip3 install seaborn
-pip3 install biopython
+Para instalar las bibliotecas mencionadas se puede hacer uso del comando pip3:
+
+`pip3 install *nombre de biblioteca que se requiere*`
 
 **B. Corrida:**
 
@@ -35,7 +30,7 @@ pip3 install biopython
 
 `uniprot_sequences.fasta`
 
-3. **En los análisis BLAST es necesario cambiar el path los programas makeblastdb y blastp según estén ubicados en la máquina en la que se correrá el codigo**
+**3. En los análisis BLAST es necesario cambiar el path los programas makeblastdb y blastp según estén ubicados en la máquina en la que se correrá el codigo**
 
 Luego de hacer los 2 análisis BLAST complementarios se obtendrán 8 archivos:
 
