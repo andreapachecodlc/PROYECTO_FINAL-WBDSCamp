@@ -13,6 +13,7 @@ Las bibliotecas necesarias para que el código funcione adecuadamente son:
 - io 
 - Adicionalmente se debe tener instalado el sowftware de NCBI Blast+ en la máquina local
 - El archivo **credentials.py** debe tener la clave para la API de NCBI que da esta plataforma a cada ususario registrado, también debe tener el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
+
  **El archivo credentials.py debe tener el siguiente formato:**
 ```
 from Bio import Entrez
