@@ -12,10 +12,13 @@ Las bibliotecas necesarias para que el código funcione adecuadamente son:
 - BioPython 
 - io 
 - Adicionalmente se debe tener instalado el sowftware de NCBI Blast+ en la máquina local
-- El archivo credentials.py debe tener la clave para la API de NCBI que da esta plataforma a cada ususario registrado, también debe tener el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
- Ejemplo de archivo credentials.py:
+- El archivo **credentials.py** debe tener la clave para la API de NCBI que da esta plataforma a cada ususario registrado, también debe tener el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
+ **El archivo credentials.py debe tener el siguiente formato:**
  
-
+ from Bio import Entrez
+Entrez.email   = 'correo personal'
+Entrez.api_key = 'clave API otorgada por NCBI'
+ 
 
 Para instalar las bibliotecas mencionadas se puede hacer uso del comando pip3:
 
