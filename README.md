@@ -37,7 +37,7 @@ Para instalar las bibliotecas mencionadas se puede hacer uso del comando pip3:
 
 `uniprot_sequences.fasta`
 
-**3. En los análisis BLAST es necesario cambiar el path los programas makeblastdb y blastp según estén ubicados en la máquina en la que se correrá el codigo**
+3. En los análisis BLAST es necesario **cambiar el path de los programas makeblastdb y blastp según estén ubicados en la máquina en la que se correrá el codigo**
 
 Luego de hacer los 2 análisis BLAST complementarios se obtendrán 8 archivos:
 
