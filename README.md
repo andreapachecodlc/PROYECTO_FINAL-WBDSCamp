@@ -12,7 +12,7 @@ Las bibliotecas necesarias para que el código funcione adecuadamente son:
 - BioPython 
 - io 
 - Adicionalmente se debe tener instalado el sowftware de NCBI Blast+ en la máquina local
-- El archivo **credentials.py** debe tener la clave para la API de NCBI que da esta plataforma a cada ususario registrado, también debe tener el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
+- El archivo **credentials.py** debe tener la clave para la API de NCBI que da esta plataforma a cada usuario registrado, también debe tener el correo personal con el que el usuario se registró en NCBI. Este archivo debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
 
  **El archivo credentials.py debe tener el siguiente formato:**
 ```
@@ -65,11 +65,11 @@ Luego de hacer los 2 análisis BLAST complementarios se obtendrán 8 archivos:
 
 5. Al correr el código correspondiente a la visualización de swarmplots con seaborn se obtiene el archivo:
 
-`Swarmplots_operones.png` con la representación gráfica de la acumulación de genes a lo largo del genoma, para la elección de coordenadas correspondientes a un potencial operón (en este caso se eligieron las coordenadas  0.65 Mbp y 0.725 Mbp en ña variable `operon_df`)
+`Swarmplots_operones.png` con la representación gráfica de la acumulación de genes a lo largo del genoma para la elección de coordenadas correspondientes a un potencial operón (en este caso se eligieron las coordenadas  0.65 Mbp y 0.725 Mbp en la variable `operon_df`)
 
 6. Al subir el archivo fasta a InterProScan se requiere cambiar el correo personal correspondiente en la variable `submit_data`
 
-7. En las variables `results_log_request` y `results_tsv_request` se agregó el job_id generado en la primera corrida del código (iprscan5-R20230317-004939-0038-41840473-p1m) para no repetir el análisis cada que se corra el código y así ahorrar tiempo, pero se puede reemplazar por la variable `submit_job_id` para trabajar con los resultados que se acaban de enviar a InterProScan
+7. En las variables `results_log_request` y `results_tsv_request` se agregó el job_id generado en la primera corrida del código ('iprscan5-R20230317-004939-0038-41840473-p1m') para no repetir el análisis cada que se corra el código y así ahorrar tiempo. Este se puede reemplazar por la variable `submit_job_id` para trabajar con los resultados que se acaban de enviar a InterProScan.
 
 8. Finalmente a lo largo del código se irá imprimiendo información reelevante respecto a nuestro análisis: 
 **El número de genes candidatos resultantes de BLAST, la cantidad de genes candidatos en operón seleccionado y los dominios funcionales más frecuentes en las secuencias seleccionadas**
