@@ -3,7 +3,7 @@
 
 Las bibliotecas necesarias para que el código funcione adecuadamente son:
 
-- El archivo credentials.py con claves de acceso para la API de NCBI
+- El archivo credentials.py con claves de acceso para la API de NCBI y debe ubicarse en la misma carpeta en la que se encuentra el archivo con el código a correr.
 - pandas 
 - pyCirclize 
 - pyrodigal 
@@ -66,3 +66,5 @@ Luego de hacer los 2 análisis BLAST complementarios se obtendrán 8 archivos:
 
 8. Finalmente a lo largo del código se irá imprimiendo información reelevante respecto a nuestro análisis: 
 **El número de genes candidatos resultantes de BLAST, la cantidad de genes candidatos en operón seleccionado y los dominios funcionales más frecuentes en las secuencias seleccionadas**
+
+Todos los archivos de salida generados mencionados se ubicarán en la carpeta que contiene el código corrido (.py o .ipynb).
